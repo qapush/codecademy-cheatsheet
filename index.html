@@ -10,12 +10,116 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Teko&display=swap" rel="stylesheet">
   <title>Cheat Sheet</title>
 </head>
 
 <body>
-  <h1>Cheat Sheet</h1>
+  <h1>HTML cheatsheet</h1>
+  <table>
+    <thead>
+      <tr>
+        <td class="topleft"></td>
+        <td>Element</td>
+        <td>Description</td>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Basic -->
+      <tr>
+        <td rowspan="6" class="rotate">
+          <span>Basic structure</span>
+        </td>
+        <td class="monospace">&lt;!DOCTYPE&nbsp;html&gt;</td>
+        <td>Ensures that the browser makes a best-effort attempt at following the relevant specifications, rather than
+          using a different rendering mode that is incompatible with some specifications</td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;html&gt;</td>
+        <td>Top-level element, also referred to as the root element. All other elements must be descendants of this
+          element</td>
+      </tr>
+      <tr>
+
+        <td class="monospace">&lt;head&gt;</td>
+        <td>Surrounds all the special “behind the scenes” elements of a web document. Most of these elements do not get
+          displayed directly on the web page.</td>
+      </tr>
+      <tr>
+
+        <td class="monospace">&lt;title&gt;</td>
+        <td>Defines what text will show in the web browser’s title bar</td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;body&gt;</td>
+        <td>Surrounds all the actual content (text, images, videos, links, etc.) that will be displayed on our web page
+        </td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;!--&nbsp;comment&nbsp;--&gt;</td>
+        <td>Is used to insert comments in the source code. Comments are not displayed in the browsers.
+        </td>
+      </tr>
+      <!-- Semantic -->
+      <tr>
+        <td rowspan="6" class="rotate">
+          <span>Semantic elements</span>
+        </td>
+        <td class="monospace">&lt;header&gt;</td>
+        <td>Represents a container for introductory content or a set of navigational links.</td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;nav&gt;</td>
+        <td>Defines a set of navigation links.</td>
+      </tr>
+      <tr>
+
+        <td class="monospace">&lt;section&gt;</td>
+        <td>Specifies independent, self-contained content. An article should make sense on its own, and it should be
+          possible to distribute it independently from the rest of the web site.</td>
+      </tr>
+      <tr>
+
+        <td class="monospace">&lt;article&gt;</td>
+        <td>Defines what text will show in the web browser’s title bar</td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;aside&gt;</td>
+        <td>Defines some content aside from the content it is placed in (like a sidebar or quotes). The &lt;aside&gt;
+          content
+          should be indirectly related to the surrounding content.
+        </td>
+      </tr>
+      <tr>
+        <td class="monospace">&lt;footer&gt;</td>
+        <td>Defines a footer for a document or section. Typically contains:
+          authorship information, copyright information, contact information, sitemap, back to top links, related
+          documents etc.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <h2>Sources:</h2>
+    <ul>
+      <li>
+        <a href="https://stuyhsdesign.wordpress.com/basic-html/structure-html-document/" target="_blank">Basic
+          structure
+          of
+          an HTML document</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+      </li>
+      <li>
+        <a href="https://stuyhsdesign.wordpress.com/html5/" target="_blank">HTML Semantic Elements
+        </a>
+      </li>
+    </ul>
+  </footer>
 
 </body>
 
